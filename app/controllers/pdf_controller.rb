@@ -7,6 +7,10 @@ class PdfController < ApplicationController
       Rails.logger.info('make pdf')
       WickedPdf.new.pdf_from_url(url.to_s)
     end
+    save_path = Rails.root.join('public/pdfs',"#{filename}.pdf")
+    File.open(save_path, 'wb') do |file|
+      file << pdf
+    end
     send_data pdf,filename: "#{filename}.pdf" , :type => "application/pdf"
   end
 end
