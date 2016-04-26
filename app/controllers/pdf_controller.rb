@@ -10,6 +10,6 @@ class PdfController < ApplicationController
     File.open(save_path, 'wb') do |file|
       file << pdf
     end
-    send_data pdf,filename: "#{filename}.pdf" , :type => "application/pdf;charset=utf-8; header=present"
+    send_file save_path, :type => "application/pdf;charset=utf-8; header=present"
   end
 end
