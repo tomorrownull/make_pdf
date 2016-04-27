@@ -15,7 +15,11 @@ WickedPdf.config = {
   #   or
   # exe_path: Gem.bin_path('wkhtmltopdf-binary', 'wkhtmltopdf')
   viewport_size: '1024x768',
-  background: true
+  background: true,
+  margin:  { top:0,                     # default 10 (mm)
+           bottom: 0,
+           left: 0,
+           right:0 }
   # Layout file to be used for all PDFs
   # (but can be overridden in `render :pdf` calls)
   # layout: 'pdf.html',
