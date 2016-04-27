@@ -8,7 +8,7 @@ set :repo_url, 'git@github.com:tomorrownull/make_pdf.git'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/deploy/#{fetch(:application)}"
+set :deploy_to, "~/#{fetch(:application)}"
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -23,7 +23,7 @@ set :deploy_to, "/home/deploy/#{fetch(:application)}"
 # set :pty, true
 set :rbenv_type, :user # or :system, depends on your rbenv setup
 set :rbenv_ruby, '2.3.0'
-set :nginx_server_name,'pdf.restaurantweek.cn'
+set :nginx_server_name,'generator.restaurantweek.cn'
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 
