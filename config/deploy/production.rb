@@ -3,7 +3,7 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server 'generator.restaurantweek.cn', user: 'deploy', roles: %w{app db web},port: 40022
+server 'generator.restaurantweek.cn', user: 'admin', roles: %w{app db web},port: 40022
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
