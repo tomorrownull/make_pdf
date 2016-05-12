@@ -61,6 +61,11 @@ GEM
       capistrano (~> 3.0)
       puma (>= 2.6)
     concurrent-ruby (1.0.1)
+    delayed_job (4.1.1)
+      activesupport (>= 3.0, < 5.0)
+    delayed_job_active_record (4.1.0)
+      activerecord (>= 3.0, < 5)
+      delayed_job (>= 3.0, < 5)
     erubis (2.7.0)
     ffi (1.9.10)
     globalid (0.3.6)
@@ -154,6 +159,7 @@ DEPENDENCIES
   capistrano-rbenv
   capistrano-rbenv-install
   capistrano3-puma
+  delayed_job_active_record
   listen (~> 3.0.5)
   puma
   rails (>= 5.0.0.beta3, < 5.1)
