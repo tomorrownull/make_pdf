@@ -6,3 +6,8 @@ require ::File.expand_path('../config/environment', __FILE__)
 Rails.application.eager_load!
 
 run Rails.application
+if Rails.env.production?
+  DelayedJobWeb.use Rack::Auth::Basic do |username, password|
+    username == 'diningcity' && password == 'dinghsiju88'
+  end
+end
