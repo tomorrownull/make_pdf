@@ -15,6 +15,7 @@ WickedPdf.config = {
   #   or
   # exe_path: Gem.bin_path('wkhtmltopdf-binary', 'wkhtmltopdf')
   viewport_size: '1024x768',
+  javascript_delay: 2000,
   background: true,
   margin:  { top:0,                     # default 10 (mm)
            bottom: 0,
