@@ -40,7 +40,7 @@ GEM
       tzinfo (~> 1.1)
     airbrussh (1.0.1)
       sshkit (>= 1.6.1, != 1.7.0)
-    arel (7.0.0)
+    arel (7.1.0)
     builder (3.2.2)
     byebug (9.0.0)
     capistrano (3.5.0)
