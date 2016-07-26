@@ -29,9 +29,19 @@ set :nginx_server_name,'generator.restaurantweek.cn'
 
 # Default value for linked_dirs is []
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system','public/pdfs')
-set :delayed_job_args, "-n 2"
+
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
+
+
+# Number of delayed_job workers
+# default value: 1
+set :delayed_job_workers, 2
+
+# String to be prefixed to worker process names
+# This feature allows a prefix name to be placed in front of the process.
+# For example:  reports/delayed_job.0  instead of just delayed_job.0
+set :delayed_job_prefix, 'pdf'
 
 # Default value for keep_releases is 5
 set :keep_releases, 2
