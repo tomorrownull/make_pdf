@@ -1,5 +1,5 @@
 GEM
-  remote: https://ruby.taobao.org/
+  remote: https://gems.ruby-china.com/
   specs:
     actioncable (5.0.1)
       actionpack (= 5.0.1)
@@ -162,7 +162,7 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
-    wicked_pdf (1.0.6)
+    wicked_pdf (1.1.0)
 
 PLATFORMS
   ruby
@@ -185,4 +185,4 @@ DEPENDENCIES
   wicked_pdf
 
 BUNDLED WITH
-   1.14.5
+   1.16.3
