@@ -3,4 +3,5 @@ taging:
 production:
   :concurrency: 1
 :queues:
+  - image
   - default

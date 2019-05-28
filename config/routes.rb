@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
-  get 'pdf/make'=> 'pdf#make'
+  get 'pdf/make' => 'pdf#make'
+  post 'image' => 'image#create'
 end
