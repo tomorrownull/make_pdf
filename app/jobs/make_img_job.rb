@@ -14,7 +14,6 @@ class MakeImgJob < ApplicationJob
     commands << 'wkhtmltoimage'
     commands << '--width 0'
     commands << '--enable-smart-width'
-    commands << '--enable-smart-width'
 
     urls.each do |url_str|
       url = URI.parse(url_str)
